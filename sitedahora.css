@@ -11,10 +11,12 @@ header {
 div {
     text-align: center;
     padding: 5px;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 section {
-    background: white;
+    background: rgba(233, 232, 235, 0.856);
     border-radius: 10px;
     padding: 15px;
     width: 600px;
