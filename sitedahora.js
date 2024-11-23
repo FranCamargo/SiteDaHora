@@ -4,8 +4,8 @@ function carregar() {
   let data = new Date();
   let hora = data.getHours();
   let minutos = String(data.getMinutes()).padStart(2, '0');
-  let dia = String(data.getDate()).padStart(2, '0'); 
-  let mes = String(data.getMonth() + 1).padStart(2, '0'); 
+  let dia = data.getDay();
+  let mes = data.getMonth();
   let ano = data.getFullYear();
 
   msg.innerHTML = `Agora são ${hora}:${minutos} hrs. <br>
