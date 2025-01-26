@@ -8,6 +8,9 @@ function carregar() {
   let mes = String(data.getMonth() + 1).padStart(2, "0"); // Corrige o mês (mês começa em 0).
   let ano = data.getFullYear();
 
+  const yearElement = document.getElementById('currentYear');
+  yearElement.textContent = new Date().getFullYear();
+
   msg.innerHTML = `Agora são ${hora}:${minutos} hrs. <br>
   Hoje é dia ${dia}/${mes}/${ano}.`;
 
